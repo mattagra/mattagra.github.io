@@ -5,41 +5,106 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+    <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <style>
+      #main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
 
-			<!-- Header -->
+      #header {
+        text-align: center;
+        padding-bottom: 6rem;
+        font-family: Helvetica, sans-serif;
+        font-size: 1rem;
+        color: #999;
+      }
+
+      h1 {
+        color: black;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 6rem;
+        margin: 0;
+      }
+
+      ul {
+        margin-top: 2rem;
+      }
+
+      li {
+        list-style-type: none;
+        display: inline;
+      }
+
+      @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+      @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+      @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+      #header nav a {
+        font-size: 1.5rem;
+        padding: .4rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        border: 1px solid #ccc;
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        border-radius: 0;
+        text-decoration: none;
+        color: #888;
+        opacity: 0;
+        -webkit-animation:fadeIn ease-in 1;
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode:forwards;
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-duration:1s;
+        -moz-animation-duration:1s;
+        animation-duration:1s;
+
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+
+      #header nav a:hover {
+        background-color: #ccc;
+        color: white;
+      }
+
+      .label {
+        display: none;
+      }
+
+    </style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="main">
 				<header id="header">
 					<h1>Matt Agra</h1>
 					<p>Software Engineering &nbsp;•&nbsp; Web Development</p>
 					<nav>
 						<ul>
-							<li><a href="https://www.linkedin.com/in/mattagra" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="http://github.com/mattagra" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://twitter.com/mattagra" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/mattagra" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="mailto:matt@mattagra.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/mattagra" class="fa fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="http://github.com/mattagra" class="fa fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://twitter.com/mattagra" class="fa fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/mattagra" class="fa fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="mailto:matt@mattagra.com" class="fa fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
 					</nav>
 				</header>
-				
 			</div>
 		</div>
 	</body>
 </html>
-<!-- Design from HTML5 UP (html5up.net | @n33co ) -->
